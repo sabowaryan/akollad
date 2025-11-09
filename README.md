@@ -2,19 +2,48 @@
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-# Run and deploy your AI Studio app
+# Akollad - Construire l'avenir de la tech africaine
 
-This contains everything you need to run your app locally.
+Ce projet est la vitrine de la holding technologique Akollad, dédiée à la promotion de l'innovation sur le continent africain.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1nH2gh4i-B8FdtPl0ifQRDD-_PnkTy9t_
+## Stack Technique
 
-## Run Locally
+Ce projet a été mis à jour pour utiliser les dernières technologies front-end :
 
-**Prerequisites:**  Node.js
+| Technologie | Version | Notes |
+| :--- | :--- | :--- |
+| **React** | 19.x | Utilisation de la dernière version pour les composants et l'architecture. |
+| **TypeScript** | ~5.x | Assure un typage fort et une meilleure maintenabilité du code. |
+| **Vite** | 6.x | Bundler rapide pour le développement et la production. |
+| **Tailwind CSS** | 4.x | Framework CSS utilitaire, configuré avec la nouvelle approche CSS-first (v4). |
+| **React Router DOM** | 6.x | Utilisé pour la gestion des routes et la structure de l'application. |
 
+## Architecture du Projet
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Le projet suit une architecture modulaire et basée sur les pages :
+
+- **`src/pages`** : Contient les composants de niveau supérieur qui représentent les différentes vues (ex: `Home.tsx`).
+- **`src/components`** : Contient les composants réutilisables, y compris le `Layout.tsx` qui définit la structure principale (Header, Footer).
+- **`src/utils`** : Contient les fichiers utilitaires et les constantes (ex: `constants.ts`).
+
+## Lancement Local
+
+**Prérequis :** Node.js et pnpm (gestionnaire de paquets recommandé).
+
+1.  **Cloner le dépôt :**
+    \`\`\`bash
+    git clone sabowaryan/akollad
+    cd akollad
+    \`\`\`
+
+2.  **Installer les dépendances :**
+    \`\`\`bash
+    pnpm install
+    \`\`\`
+
+3.  **Lancer l'application en mode développement :**
+    \`\`\`bash
+    pnpm run dev
+    \`\`\`
+
+L'application sera accessible à l'adresse `http://localhost:3000` (ou un port disponible).
