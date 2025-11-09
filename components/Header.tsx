@@ -17,7 +17,7 @@ const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const navLinks = [
-    { href: '#about', label: 'About' },
+    { href: '#about', label: 'À propos' },
     { href: '#divisions', label: 'Labs' },
     { href: '#divisions', label: 'Studio' },
     { href: '#divisions', label: 'Cloud' },

@@ -12,11 +12,11 @@ const Footer: React.FC = () => {
     <footer className="bg-black bg-opacity-20 border-t border-gray-800">
       <div className="container mx-auto px-6 lg:px-8 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-          <p className="text-gray-400 text-sm">&copy; {new Date().getFullYear()} Akollad Group. All rights reserved.</p>
+          <p className="text-gray-400 text-sm">&copy; {new Date().getFullYear()} Groupe Akollad. Tous droits réservés.</p>
 
           <div className="flex items-center space-x-6">
-            <FooterLink href="#">Privacy Policy</FooterLink>
-            <FooterLink href="#">Careers</FooterLink>
+            <FooterLink href="#">Politique de confidentialité</FooterLink>
+            <FooterLink href="#">Carrières</FooterLink>
             <FooterLink href="#">Contact</FooterLink>
           </div>
 

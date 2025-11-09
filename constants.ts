@@ -1,37 +1,37 @@
 export const CORE_VALUES = [
   {
     title: 'Innovation',
-    description: 'We pioneer new solutions and push the boundaries of technology to solve uniquely African challenges.'
+    description: "Nous innovons avec de nouvelles solutions et repoussons les limites de la technologie pour relever les défis spécifiquement africains."
   },
   {
-    title: 'Reliability',
-    description: 'We build robust, scalable, and secure systems that our partners and users can depend on.'
+    title: 'Fiabilité',
+    description: 'Nous construisons des systèmes robustes, évolutifs et sécurisés sur lesquels nos partenaires et utilisateurs peuvent compter.'
   },
   {
-    title: 'Openness',
-    description: 'We foster collaboration and transparency, believing that the best ideas emerge from shared knowledge.'
+    title: 'Ouverture',
+    description: "Nous encourageons la collaboration et la transparence, convaincus que les meilleures idées naissent du partage des connaissances."
   },
   {
     title: 'Impact',
-    description: 'We are committed to creating technology that delivers tangible social and economic value across the continent.'
+    description: "Nous nous engageons à créer une technologie qui apporte une valeur sociale et économique tangible sur tout le continent."
   }
 ];
 
 export const DIVISIONS = [
   {
     name: 'Labs',
-    description: 'Our research and development hub, focusing on artificial intelligence, machine learning, and next-generation technologies to shape the future.'
+    description: "Notre pôle de recherche et développement, axé sur l'intelligence artificielle, l'apprentissage automatique et les technologies de nouvelle génération pour façonner l'avenir."
   },
   {
     name: 'Studio',
-    description: 'A creative powerhouse for designing and developing world-class websites, mobile applications, and digital experiences that captivate users.'
+    description: "Un pôle créatif pour la conception et le développement de sites web, d'applications mobiles et d'expériences numériques de classe mondiale qui captivent les utilisateurs."
   },
   {
     name: 'Cloud',
-    description: 'Providing secure, scalable, and sovereign cloud hosting, DevOps, and infrastructure solutions tailored for African enterprises.'
+    description: "Fournir des solutions d'hébergement cloud, DevOps et d'infrastructure sécurisées, évolutives et souveraines, adaptées aux entreprises africaines."
   },
   {
     name: 'Ventures',
-    description: 'Our strategic investment arm, dedicated to identifying and funding the most promising tech startups and founders across Africa.'
+    description: "Notre branche d'investissement stratégique, dédiée à l'identification et au financement des startups et fondateurs technologiques les plus prometteurs d'Afrique."
   }
 ];
