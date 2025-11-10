@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { LinkedInIcon, TwitterIcon, GithubIcon } from './icons/SocialIcons';
 
-const FooterLink: React.FC<{ href: string; children: React.ReactNode }> = ({ href, children }) => (
-  <a href={href} className="text-gray-400 hover:text-[#31FF88] transition-colors duration-300">
+const FooterLink: React.FC<{ to: string; children: React.ReactNode }> = ({ to, children }) => (
+  <Link to={to} className="text-gray-400 hover:text-[#31FF88] transition-colors duration-300">
     {children}
-  </a>
+  </Link>
 );
 
 const Footer: React.FC = () => {
@@ -15,9 +16,9 @@ const Footer: React.FC = () => {
           <p className="text-gray-400 text-sm">&copy; {new Date().getFullYear()} Groupe Akollad. Tous droits réservés.</p>
 
           <div className="flex items-center space-x-6">
-            <FooterLink href="#">Politique de confidentialité</FooterLink>
-            <FooterLink href="#">Carrières</FooterLink>
-            <FooterLink href="#">Contact</FooterLink>
+            <FooterLink to="/privacy-policy">Politique de confidentialité</FooterLink>
+            <FooterLink to="#">Carrières</FooterLink>
+            <FooterLink to="#">Contact</FooterLink>
           </div>
 
           <div className="flex items-center space-x-4">
