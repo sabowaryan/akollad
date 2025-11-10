@@ -22,13 +22,13 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="flex items-center space-x-4">
-            <a href="#" aria-label="LinkedIn" className="text-gray-400 hover:text-white transition-colors duration-300 hover:drop-shadow-[0_0_5px_#31FF88]">
+            <a href="https://www.linkedin.com/company/akollad-group/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-400 hover:text-white transition-colors duration-300 hover:drop-shadow-[0_0_5px_#31FF88]">
               <LinkedInIcon className="w-6 h-6" />
             </a>
-            <a href="#" aria-label="Twitter" className="text-gray-400 hover:text-white transition-colors duration-300 hover:drop-shadow-[0_0_5px_#31FF88]">
+            <a href="https://twitter.com/AkolladGroup" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-gray-400 hover:text-white transition-colors duration-300 hover:drop-shadow-[0_0_5px_#31FF88]">
               <TwitterIcon className="w-6 h-6" />
             </a>
-            <a href="#" aria-label="GitHub" className="text-gray-400 hover:text-white transition-colors duration-300 hover:drop-shadow-[0_0_5px_#31FF88]">
+            <a href="https://github.com/AkolladGroup" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-gray-400 hover:text-white transition-colors duration-300 hover:drop-shadow-[0_0_5px_#31FF88]">
               <GithubIcon className="w-6 h-6" />
             </a>
           </div>
