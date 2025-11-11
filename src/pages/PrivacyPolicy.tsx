@@ -62,9 +62,9 @@ const PrivacyPolicy: React.FC = () => {
       <div className="container mx-auto px-6 lg:px-8 max-w-4xl">
         <div className="text-center mb-12">
           <Link to="/" className="text-3xl font-bold tracking-wider">
-            <span className="text-[#31FF88] font-mono">{'{\'}</span>
+            <span className="text-[#31FF88] font-mono">{'{'}</span>
             <span className="mx-1 text-white">Akollad</span>
-            <span className="text-[#31FF88] font-mono">{'}\'}</span>
+            <span className="text-[#31FF88] font-mono">{'}'}</span>
           </Link>
         </div>
         
