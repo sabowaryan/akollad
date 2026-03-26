@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedSection from '../components/AnimatedSection';
+import SEO from '../components/SEO';
 
 const Presse: React.FC = () => {
   const contacts = [
@@ -29,6 +30,11 @@ const Presse: React.FC = () => {
 
   return (
     <>
+      <SEO
+        title="Presse & Médias — Akollad Groupe"
+        description="Espace presse d'Akollad Groupe. Retrouvez notre kit média, nos contacts presse et toutes les informations pour les journalistes et médias souhaitant couvrir l'actualité du groupe."
+        canonical="/presse"
+      />
       {/* Page Hero */}
       <section className="pt-32 sm:pt-40 pb-16 sm:pb-20 border-b border-white/5">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">

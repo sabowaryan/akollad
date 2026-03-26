@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedSection from '../components/AnimatedSection';
+import SEO from '../components/SEO';
 
 interface JobCardProps {
   title: string;
@@ -76,6 +77,11 @@ const JOBS: JobCardProps[] = [
 const Carrieres: React.FC = () => {
   return (
     <>
+      <SEO
+        title="Carrières — Rejoignez Akollad Groupe"
+        description="Rejoignez l'équipe Akollad et participez à la construction de l'avenir technologique africain. Découvrez nos offres d'emploi en Labs, Studio, Cloud et Ventures."
+        canonical="/carrieres"
+      />
       {/* Page Hero */}
       <section className="pt-32 sm:pt-40 pb-16 sm:pb-20 border-b border-white/5">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedSection from '../components/AnimatedSection';
+import SEO from '../components/SEO';
 
 const StatCard: React.FC<{ value: string; label: string; sub?: string }> = ({ value, label, sub }) => (
   <div className="bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-8 text-center">
@@ -18,6 +19,11 @@ const StatCard: React.FC<{ value: string; label: string; sub?: string }> = ({ va
 const Investisseurs: React.FC = () => {
   return (
     <>
+      <SEO
+        title="Investisseurs — Akollad Groupe"
+        description="Investissez dans l'avenir technologique de l'Afrique avec Akollad. Découvrez nos métriques, notre vision et les opportunités d'investissement au sein de notre holding."
+        canonical="/investisseurs"
+      />
       {/* Page Hero */}
       <section className="pt-32 sm:pt-40 pb-16 sm:pb-20 border-b border-white/5">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">

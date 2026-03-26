@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedSection from '../components/AnimatedSection';
+import SEO from '../components/SEO';
 
 interface SectionProps {
   number: string;
@@ -30,6 +31,12 @@ const BulletItem: React.FC<{ children: React.ReactNode }> = ({ children }) => (
 const PrivacyPolicy: React.FC = () => {
   return (
     <>
+      <SEO
+        title="Privacy Policy — Akollad Groupe"
+        description="Read Akollad Group's privacy policy: data collection, usage, cookies, user rights and contact information for any data protection requests."
+        canonical="/privacy"
+        noIndex={true}
+      />
       <section className="pt-32 sm:pt-40 pb-16 sm:pb-20 border-b border-white/5">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
           <AnimatedSection>

@@ -3,10 +3,16 @@ import AnimatedSection from '../components/AnimatedSection';
 import { CoreValueCard, DivisionCard, ProductCard } from '../components/Cards';
 import { CORE_VALUES, DIVISIONS, PRODUCTS } from '../utils/constants';
 import { HeroPattern } from '../components/HeroPattern';
+import SEO from '../components/SEO';
 
 const Home: React.FC = () => {
   return (
     <>
+      <SEO
+        title="Akollad Groupe — Construire l'avenir de la tech africaine"
+        description="Akollad est une holding technologique africaine réunissant Labs, Studio, Cloud et Ventures. Nous investissons, créons et faisons croître les champions technologiques du continent."
+        canonical="/"
+      />
       {/* Hero Section */}
       <section id="home" className="relative flex items-center justify-center min-h-screen text-center overflow-hidden px-4">
         <HeroPattern />

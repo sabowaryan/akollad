@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import AnimatedSection from '../components/AnimatedSection';
+import SEO from '../components/SEO';
 
 interface SectionProps {
   number: string;
@@ -23,6 +24,12 @@ const PolicySection: React.FC<SectionProps> = ({ number, title, children }) => (
 const Confidentialite: React.FC = () => {
   return (
     <>
+      <SEO
+        title="Politique de Confidentialité — Akollad Groupe"
+        description="Consultez la politique de confidentialité d'Akollad Groupe : collecte des données, utilisation, cookies, droits des utilisateurs et contact pour toute demande relative à vos données personnelles."
+        canonical="/confidentialite"
+        noIndex={true}
+      />
       <section className="pt-32 sm:pt-40 pb-16 sm:pb-20 border-b border-white/5">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
           <AnimatedSection>
