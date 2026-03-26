@@ -2,21 +2,24 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { LinkedInIcon, TwitterIcon, GithubIcon } from './icons/SocialIcons';
 
-const FooterLink: React.FC<{ to: string; children: React.ReactNode; external?: boolean }> = ({ to, children, external }) => (
-  external
-    ? <a href={to} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#C9A96E] transition-colors duration-300 text-sm">{children}</a>
-    : <Link to={to} className="text-gray-400 hover:text-[#C9A96E] transition-colors duration-300 text-sm">{children}</Link>
+const FooterAnchor: React.FC<{ href: string; children: React.ReactNode }> = ({ href, children }) => (
+  <a href={href} className="text-gray-400 hover:text-[#C9A96E] transition-colors duration-300 text-sm">{children}</a>
+);
+
+const FooterRouterLink: React.FC<{ to: string; children: React.ReactNode }> = ({ to, children }) => (
+  <Link to={to} className="text-gray-400 hover:text-[#C9A96E] transition-colors duration-300 text-sm">{children}</Link>
 );
 
 const Footer: React.FC = () => {
   return (
     <footer className="border-t border-white/10 bg-[#080D17]">
-      <div className="container mx-auto px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
-          <div>
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 mb-10 sm:mb-12">
+
+          <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <img src="/web-app-manifest-192x192.png" alt="Akollad Groupe" className="w-8 h-8 rounded-full" />
-              <span className="text-lg font-bold tracking-widest uppercase" style={{ fontFamily: "'Syne', sans-serif" }}>
+              <img src="/web-app-manifest-192x192.png" alt="Akollad Groupe" className="w-8 h-8 rounded-full flex-shrink-0" />
+              <span className="text-base font-bold tracking-widest uppercase" style={{ fontFamily: "'Syne', sans-serif" }}>
                 Akollad <span className="text-[#C9A96E] font-normal text-sm">Groupe</span>
               </span>
             </div>
@@ -27,27 +30,43 @@ const Footer: React.FC = () => {
 
           <div>
             <h4 className="text-xs uppercase tracking-widest text-[#C9A96E] font-semibold mb-4">Navigation</h4>
-            <ul className="space-y-2">
-              <li><FooterLink to="#">À propos</FooterLink></li>
-              <li><FooterLink to="#">Nos divisions</FooterLink></li>
-              <li><FooterLink to="#">Vision & Impact</FooterLink></li>
-              <li><FooterLink to="/privacy-policy">Politique de confidentialité</FooterLink></li>
+            <ul className="space-y-2.5">
+              <li><FooterAnchor href="#about">À propos</FooterAnchor></li>
+              <li><FooterAnchor href="#produits">Nos produits</FooterAnchor></li>
+              <li><FooterAnchor href="#divisions">Nos divisions</FooterAnchor></li>
+              <li><FooterAnchor href="#vision">Vision &amp; Impact</FooterAnchor></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-xs uppercase tracking-widest text-[#C9A96E] font-semibold mb-4">Produits</h4>
+            <ul className="space-y-2.5">
+              <li>
+                <a href="https://piksend.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#C9A96E] transition-colors duration-300 text-sm">
+                  PikSend
+                </a>
+              </li>
+              <li>
+                <a href="https://gatectr.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#C9A96E] transition-colors duration-300 text-sm">
+                  GateCtr
+                </a>
+              </li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-xs uppercase tracking-widest text-[#C9A96E] font-semibold mb-4">Rejoignez-nous</h4>
-            <ul className="space-y-2">
-              <li><FooterLink to="#">Carrières</FooterLink></li>
-              <li><FooterLink to="#">Investisseurs</FooterLink></li>
-              <li><FooterLink to="#">Presse &amp; Médias</FooterLink></li>
-              <li><FooterLink to="#">Contact</FooterLink></li>
+            <ul className="space-y-2.5">
+              <li><FooterAnchor href="#contact">Carrières</FooterAnchor></li>
+              <li><FooterAnchor href="#contact">Investisseurs</FooterAnchor></li>
+              <li><FooterAnchor href="#contact">Presse &amp; Médias</FooterAnchor></li>
+              <li><FooterRouterLink to="/privacy-policy">Confidentialité</FooterRouterLink></li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-500 text-xs">
+        <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <p className="text-gray-500 text-xs text-center sm:text-left">
             &copy; {new Date().getFullYear()} Akollad Groupe S.A.S. — Tous droits réservés.
           </p>
           <div className="flex items-center space-x-4">
