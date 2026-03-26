@@ -73,7 +73,7 @@ const Footer: React.FC = () => {
               <a href="https://twitter.com/AkolladGroup" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X" className="text-gray-500 hover:text-[#C9A96E] transition-colors duration-300">
                 <TwitterIcon className="w-5 h-5" />
               </a>
-              <a href="https://github.com/AkolladGroup" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-gray-500 hover:text-[#C9A96E] transition-colors duration-300">
+              <a href="https://github.com/akollad" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-gray-500 hover:text-[#C9A96E] transition-colors duration-300">
                 <GithubIcon className="w-5 h-5" />
               </a>
             </div>
