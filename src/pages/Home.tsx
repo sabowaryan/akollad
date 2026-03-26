@@ -17,10 +17,13 @@ const Home: React.FC = () => {
               Holding Technologique Africaine
             </div>
             <h1
-              className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold uppercase tracking-tight leading-[1.05]"
-              style={{ fontFamily: "'Syne', sans-serif" }}
+              className="font-extrabold uppercase tracking-tight leading-[1.08] w-full"
+              style={{
+                fontFamily: "'Syne', sans-serif",
+                fontSize: 'clamp(2rem, 7.5vw, 5.5rem)',
+              }}
             >
-              Construire l'avenir<br />
+              Construire l'avenir{' '}
               <span className="text-[#C9A96E]">de la tech africaine.</span>
             </h1>
             <p className="mt-6 text-base sm:text-lg md:text-xl text-gray-400 max-w-xl mx-auto leading-relaxed">
