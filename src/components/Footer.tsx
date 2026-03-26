@@ -6,7 +6,7 @@ const FooterAnchor: React.FC<{ href: string; children: React.ReactNode }> = ({ h
   <a href={href} className="text-gray-400 hover:text-[#C9A96E] transition-colors duration-300 text-sm">{children}</a>
 );
 
-const FooterRouterLink: React.FC<{ to: string; children: React.ReactNode }> = ({ to, children }) => (
+const FooterLink: React.FC<{ to: string; children: React.ReactNode }> = ({ to, children }) => (
   <Link to={to} className="text-gray-400 hover:text-[#C9A96E] transition-colors duration-300 text-sm">{children}</Link>
 );
 
@@ -31,10 +31,10 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-xs uppercase tracking-widest text-[#C9A96E] font-semibold mb-4">Navigation</h4>
             <ul className="space-y-2.5">
-              <li><FooterAnchor href="#about">À propos</FooterAnchor></li>
-              <li><FooterAnchor href="#produits">Nos produits</FooterAnchor></li>
-              <li><FooterAnchor href="#divisions">Nos divisions</FooterAnchor></li>
-              <li><FooterAnchor href="#vision">Vision &amp; Impact</FooterAnchor></li>
+              <li><FooterAnchor href="/#about">À propos</FooterAnchor></li>
+              <li><FooterAnchor href="/#produits">Nos produits</FooterAnchor></li>
+              <li><FooterAnchor href="/#divisions">Nos divisions</FooterAnchor></li>
+              <li><FooterAnchor href="/#vision">Vision &amp; Impact</FooterAnchor></li>
             </ul>
           </div>
 
@@ -42,25 +42,21 @@ const Footer: React.FC = () => {
             <h4 className="text-xs uppercase tracking-widest text-[#C9A96E] font-semibold mb-4">Produits</h4>
             <ul className="space-y-2.5">
               <li>
-                <a href="https://piksend.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#C9A96E] transition-colors duration-300 text-sm">
-                  PikSend
-                </a>
+                <a href="https://piksend.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#C9A96E] transition-colors duration-300 text-sm">PikSend</a>
               </li>
               <li>
-                <a href="https://gatectr.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#C9A96E] transition-colors duration-300 text-sm">
-                  GateCtr
-                </a>
+                <a href="https://gatectr.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#C9A96E] transition-colors duration-300 text-sm">GateCtr</a>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-xs uppercase tracking-widest text-[#C9A96E] font-semibold mb-4">Rejoignez-nous</h4>
+            <h4 className="text-xs uppercase tracking-widest text-[#C9A96E] font-semibold mb-4">Groupe</h4>
             <ul className="space-y-2.5">
-              <li><FooterAnchor href="#contact">Carrières</FooterAnchor></li>
-              <li><FooterAnchor href="#contact">Investisseurs</FooterAnchor></li>
-              <li><FooterAnchor href="#contact">Presse &amp; Médias</FooterAnchor></li>
-              <li><FooterRouterLink to="/privacy-policy">Confidentialité</FooterRouterLink></li>
+              <li><FooterLink to="/carrieres">Carrières</FooterLink></li>
+              <li><FooterLink to="/investisseurs">Investisseurs</FooterLink></li>
+              <li><FooterLink to="/presse">Presse &amp; Médias</FooterLink></li>
+              <li><FooterLink to="/confidentialite">Confidentialité</FooterLink></li>
             </ul>
           </div>
         </div>
