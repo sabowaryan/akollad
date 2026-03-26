@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
-/* Custom scrollbar for a more modern look */
+/* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #162650; 
+  background: #080D17;
 }
 ::-webkit-scrollbar-thumb {
-  background: #31FF88;
+  background: #C9A96E;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #1dc86d; 
+  background: #E8C98A;
 }
