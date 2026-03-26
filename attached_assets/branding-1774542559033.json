@@ -1,0 +1,114 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "sf pro text",
+      "count": 4
+    },
+    {
+      "family": "sf pro icons",
+      "count": 4
+    },
+    {
+      "family": "helvetica neue",
+      "count": 4
+    },
+    {
+      "family": "helvetica",
+      "count": 4
+    },
+    {
+      "family": "arial",
+      "count": 4
+    },
+    {
+      "family": "sans-serif",
+      "count": 4
+    }
+  ],
+  "colors": {
+    "primary": "#0070F3",
+    "accent": "#79FFE1",
+    "background": "#DDDDDD",
+    "textPrimary": "#333333",
+    "link": "#79FFE1"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "sf pro text",
+      "heading": "sf pro text"
+    },
+    "fontStacks": {
+      "body": [
+        "sf pro text",
+        "sf pro icons",
+        "helvetica neue",
+        "helvetica",
+        "arial",
+        "sans-serif"
+      ],
+      "heading": [
+        "sf pro text",
+        "sf pro icons",
+        "helvetica neue",
+        "helvetica",
+        "arial",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "sf pro text",
+        "sf pro icons",
+        "helvetica neue",
+        "helvetica",
+        "arial",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "16px",
+      "h2": "16px",
+      "body": "16px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "4px"
+  },
+  "components": {},
+  "images": {
+    "logo": null,
+    "favicon": null,
+    "ogImage": null
+  },
+  "personality": {
+    "tone": "professional",
+    "energy": "medium",
+    "targetAudience": "unknown"
+  },
+  "designSystem": {
+    "framework": "unknown",
+    "componentLibrary": ""
+  },
+  "confidence": {
+    "buttons": 0,
+    "colors": 0,
+    "overall": 0
+  },
+  "__llm_metadata": {
+    "logoSelection": {
+      "llmCalled": false,
+      "llmSucceeded": false,
+      "finalSource": "none",
+      "rawLogoSelection": {
+        "selectedLogoIndex": -1,
+        "selectedLogoReasoning": "LLM failed",
+        "confidence": 0
+      }
+    },
+    "buttonClassification": {
+      "llmCalled": false,
+      "llmSucceeded": false,
+      "error": "LLM call failed or returned fallback values"
+    }
+  }
+}
