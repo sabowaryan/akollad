@@ -99,8 +99,7 @@ const Home: React.FC = () => {
                   description={product.description}
                   url={product.url}
                   category={product.category}
-                  logoUrl={'logoUrl' in product ? product.logoUrl : undefined}
-                  logoPath={'logoPath' in product ? product.logoPath : undefined}
+                  logo={product.logo}
                 />
               </AnimatedSection>
             ))}
@@ -174,7 +173,7 @@ const Home: React.FC = () => {
               href="mailto:contact@akollad.com"
               className="mt-8 inline-block bg-[#C9A96E] text-[#0B111E] font-bold py-4 px-10 rounded-full text-xs sm:text-sm uppercase tracking-widest transition-all duration-300 hover:bg-[#E8C98A] hover:shadow-[0_0_28px_rgba(201,169,110,0.45)] transform hover:-translate-y-0.5"
             >
-              Nous écrire
+              Nous écrire — contact@akollad.com
             </a>
           </AnimatedSection>
         </div>

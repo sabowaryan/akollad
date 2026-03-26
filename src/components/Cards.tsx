@@ -20,32 +20,28 @@ interface ProductCardProps {
   description: string;
   url: string;
   category: string;
-  logoUrl?: string;
-  logoPath?: string;
+  logo: string;
 }
 
-export const ProductCard: React.FC<ProductCardProps> = ({ name, tagline, description, url, category, logoUrl, logoPath }) => {
-  const logo = logoUrl || logoPath;
+export const ProductCard: React.FC<ProductCardProps> = ({ name, tagline, description, url, category, logo }) => {
   return (
     <div className="flex flex-col bg-white/5 rounded-2xl border border-white/10 overflow-hidden transition-all duration-300 hover:border-[#C9A96E]/60 hover:shadow-[0_0_40px_rgba(201,169,110,0.08)] group">
-      <div className="p-8 flex flex-col flex-1">
+      <div className="p-6 sm:p-8 flex flex-col flex-1">
         <div className="flex items-start justify-between gap-4 mb-6">
           <div className="flex items-center gap-4">
-            {logo && (
-              <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center rounded-xl bg-white/10 p-2">
-                <img src={logo} alt={`${name} logo`} className="w-full h-full object-contain" />
-              </div>
-            )}
+            <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center rounded-xl bg-white/10 p-2">
+              <img src={logo} alt={`${name} logo`} className="w-full h-full object-contain" />
+            </div>
             <div>
               <span className="text-[10px] font-semibold uppercase tracking-widest text-[#C9A96E] block mb-0.5">{category}</span>
-              <h3 className="text-2xl font-bold text-white" style={{ fontFamily: "'Syne', sans-serif" }}>{name}</h3>
+              <h3 className="text-xl sm:text-2xl font-bold text-white" style={{ fontFamily: "'Syne', sans-serif" }}>{name}</h3>
             </div>
           </div>
           <a
             href={url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-full border border-white/15 text-gray-400 hover:border-[#C9A96E] hover:text-[#C9A96E] transition-all duration-300 group-hover:border-[#C9A96E]/50"
+            className="flex-shrink-0 flex items-center justify-center w-9 h-9 rounded-full border border-white/15 text-gray-400 hover:border-[#C9A96E] hover:text-[#C9A96E] transition-all duration-300"
             aria-label={`Visiter ${name}`}
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -23,7 +23,7 @@ export const PRODUCTS = [
     tagline: 'Galeries photos clients — sans compression.',
     description: "Partagez vos photos en qualité originale. Les apps de messagerie compressent vos images — PikSend livre exactement ce que vous avez uploadé, directement sur le téléphone de vos clients.",
     url: 'https://piksend.com',
-    logoUrl: 'https://res.cloudinary.com/dvjxn1apr/image/upload/c_limit,w_96/f_auto/q_auto/v1/piksend/icons/piksend/icons/logo-gradient-svg',
+    logo: 'https://res.cloudinary.com/dvjxn1apr/image/upload/c_limit,w_96/f_auto/q_auto/v1/piksend/icons/piksend/icons/logo-gradient-svg',
     category: 'SaaS · Photographie',
   },
   {
@@ -31,7 +31,7 @@ export const PRODUCTS = [
     tagline: 'Réduisez vos coûts LLM de 40%.',
     description: "Un seul endpoint swap. Contrôle total sur les tokens, les budgets et le routage. GateCtr choisit automatiquement le meilleur LLM pour chaque requête — sans changer une ligne de code.",
     url: 'https://gatectr.com',
-    logoPath: '/gatectr-logo.svg',
+    logo: '/gatectr-logo.svg',
     category: 'SaaS · Intelligence Artificielle',
   }
 ];
