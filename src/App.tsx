@@ -6,6 +6,7 @@ import Carrieres from './pages/Carrieres';
 import Investisseurs from './pages/Investisseurs';
 import Presse from './pages/Presse';
 import Confidentialite from './pages/Confidentialite';
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 const App: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const App: React.FC = () => {
         <Route path="/presse" element={<Layout><Presse /></Layout>} />
         <Route path="/confidentialite" element={<Layout><Confidentialite /></Layout>} />
         <Route path="/privacy-policy" element={<Layout><Confidentialite /></Layout>} />
+        <Route path="/privacy" element={<Layout><PrivacyPolicy /></Layout>} />
       </Routes>
     </Router>
   );
