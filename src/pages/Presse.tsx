@@ -19,8 +19,8 @@ const Presse: React.FC = () => {
   ];
 
   const facts = [
-    { label: 'Fondation', value: '2023' },
-    { label: 'Siège social', value: "Abidjan, Côte d'Ivoire" },
+    { label: 'Fondation', value: 'Novembre 2025' },
+    { label: 'Siège social', value: 'Kinshasa, RDC' },
     { label: 'Modèle', value: 'Holding technologique' },
     { label: 'Divisions', value: 'Labs · Studio · Cloud · Ventures' },
     { label: 'Produits', value: 'PikSend · GateCtr' },

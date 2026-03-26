@@ -61,21 +61,26 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-gray-500 text-xs text-center sm:text-left">
-            &copy; {new Date().getFullYear()} Akollad Groupe S.A.S. — Tous droits réservés.
-          </p>
-          <div className="flex items-center space-x-4">
-            <a href="https://www.linkedin.com/company/akollad-group/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-500 hover:text-[#C9A96E] transition-colors duration-300">
-              <LinkedInIcon className="w-5 h-5" />
-            </a>
-            <a href="https://twitter.com/AkolladGroup" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X" className="text-gray-500 hover:text-[#C9A96E] transition-colors duration-300">
-              <TwitterIcon className="w-5 h-5" />
-            </a>
-            <a href="https://github.com/AkolladGroup" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-gray-500 hover:text-[#C9A96E] transition-colors duration-300">
-              <GithubIcon className="w-5 h-5" />
-            </a>
+        <div className="border-t border-white/10 pt-8 flex flex-col gap-3">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p className="text-gray-500 text-xs text-center sm:text-left">
+              &copy; {new Date().getFullYear()} Akollad Groupe S.A.S. — Kinshasa, RDC — Tous droits réservés.
+            </p>
+            <div className="flex items-center space-x-4">
+              <a href="https://www.linkedin.com/company/akollad-group/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-500 hover:text-[#C9A96E] transition-colors duration-300">
+                <LinkedInIcon className="w-5 h-5" />
+              </a>
+              <a href="https://twitter.com/AkolladGroup" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X" className="text-gray-500 hover:text-[#C9A96E] transition-colors duration-300">
+                <TwitterIcon className="w-5 h-5" />
+              </a>
+              <a href="https://github.com/AkolladGroup" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-gray-500 hover:text-[#C9A96E] transition-colors duration-300">
+                <GithubIcon className="w-5 h-5" />
+              </a>
+            </div>
           </div>
+          <p className="text-gray-600 text-[10px] text-center sm:text-left leading-relaxed">
+            RCCM : CD/KNG/RCCM/25-A-07960 &nbsp;·&nbsp; N° Impôt : A2557944L &nbsp;·&nbsp; ID : 01-J6100-N86614P &nbsp;·&nbsp; Fondée en Novembre 2025
+          </p>
         </div>
       </div>
     </footer>
