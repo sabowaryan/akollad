@@ -7,6 +7,7 @@ import Investisseurs from './pages/Investisseurs';
 import Presse from './pages/Presse';
 import Confidentialite from './pages/Confidentialite';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import Terms from './pages/Terms';
 
 const App: React.FC = () => {
   return (
@@ -19,6 +20,8 @@ const App: React.FC = () => {
         <Route path="/confidentialite" element={<Layout><Confidentialite /></Layout>} />
         <Route path="/privacy-policy" element={<Layout><Confidentialite /></Layout>} />
         <Route path="/privacy" element={<Layout><PrivacyPolicy /></Layout>} />
+        <Route path="/terms" element={<Layout><Terms /></Layout>} />
+        <Route path="/conditions" element={<Layout><Terms /></Layout>} />
       </Routes>
     </Router>
   );
