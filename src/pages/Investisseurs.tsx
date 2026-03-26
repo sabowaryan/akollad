@@ -3,10 +3,15 @@ import { Link } from 'react-router-dom';
 import AnimatedSection from '../components/AnimatedSection';
 
 const StatCard: React.FC<{ value: string; label: string; sub?: string }> = ({ value, label, sub }) => (
-  <div className="bg-white/5 border border-white/10 rounded-2xl p-6 sm:p-8 text-center">
-    <div className="text-3xl sm:text-4xl font-extrabold text-[#C9A96E] mb-2" style={{ fontFamily: "'Syne', sans-serif" }}>{value}</div>
-    <div className="text-white font-semibold text-sm sm:text-base">{label}</div>
-    {sub && <div className="text-gray-500 text-xs mt-1">{sub}</div>}
+  <div className="bg-white/5 border border-white/10 rounded-2xl p-5 sm:p-8 text-center">
+    <div
+      className="font-extrabold text-[#C9A96E] mb-2 leading-tight"
+      style={{ fontFamily: "'Syne', sans-serif", fontSize: 'clamp(1.25rem, 4vw, 2.25rem)' }}
+    >
+      {value}
+    </div>
+    <div className="text-white font-semibold text-sm">{label}</div>
+    {sub && <div className="text-gray-500 text-xs mt-1 leading-snug">{sub}</div>}
   </div>
 );
 
@@ -40,11 +45,11 @@ const Investisseurs: React.FC = () => {
       {/* Stats */}
       <section className="py-12 sm:py-16 border-b border-white/5">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5">
             <StatCard value="2+" label="Produits SaaS" sub="En production" />
-            <StatCard value="4" label="Divisions actives" sub="Labs · Studio · Cloud · Ventures" />
-            <StatCard value="Pan-africain" label="Marché adressable" sub="1,4 Md d'habitants" />
-            <StatCard value="Nov. 2025" label="Fondation" sub="Croissance continue" />
+            <StatCard value="4" label="Divisions" sub="Labs · Studio · Cloud · Ventures" />
+            <StatCard value="+1,4 Md" label="Marché adressable" sub="Pan-africain" />
+            <StatCard value="2025" label="Fondation" sub="Kinshasa, RDC" />
           </div>
         </div>
       </section>
