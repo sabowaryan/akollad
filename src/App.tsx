@@ -8,10 +8,12 @@ import Presse from './pages/Presse';
 import Confidentialite from './pages/Confidentialite';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Terms from './pages/Terms';
+import ScrollToHash from './components/ScrollToHash';
 
 const App: React.FC = () => {
   return (
     <Router>
+      <ScrollToHash />
       <Routes>
         <Route path="/" element={<Layout><Home /></Layout>} />
         <Route path="/carrieres" element={<Layout><Carrieres /></Layout>} />
