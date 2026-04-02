@@ -47,6 +47,9 @@ const Footer: React.FC = () => {
               <li>
                 <a href="https://gatectr.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#C9A96E] transition-colors duration-300 text-sm">GateCtr</a>
               </li>
+              <li>
+                <a href="https://joventy.cd" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-[#C9A96E] transition-colors duration-300 text-sm">Joventy</a>
+              </li>
             </ul>
           </div>
 

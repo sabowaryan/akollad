@@ -33,6 +33,14 @@ export const PRODUCTS = [
     url: 'https://gatectr.com',
     logo: '/gatectr-logo.svg',
     category: 'SaaS · Intelligence Artificielle',
+  },
+  {
+    name: 'Joventy',
+    tagline: 'Votre visa, géré par des experts.',
+    description: "Assistance visa premium basée à Kinshasa — Joventy remplit vos formulaires, cherche vos créneaux consulaires et soumet vos e-Visas pour l'USA, Dubaï, la Turquie et l'Inde. Vous payez si ça marche.",
+    url: 'https://joventy.cd',
+    logo: '/joventy-logo.png',
+    category: 'Service · Visa & Immigration',
   }
 ];
 
