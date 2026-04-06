@@ -41,6 +41,14 @@ export const PRODUCTS = [
     url: 'https://joventy.cd',
     logo: '/joventy-logo.png',
     category: 'Service · Visa & Immigration',
+  },
+  {
+    name: 'MazaoChain',
+    tagline: 'Le financement agricole décentralisé en RDC.',
+    description: "La plateforme blockchain qui révolutionne le financement agricole en RDC. Tokenisez vos récoltes, accédez au crédit et investissez dans l'agriculture durable — de façon transparente et sécurisée.",
+    url: 'https://mazaochain.vercel.app',
+    logo: '/mazaochain-logo.svg',
+    category: 'Web3 · Agriculture & Finance',
   }
 ];
 
