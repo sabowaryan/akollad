@@ -86,12 +86,16 @@ export const DivisionCard: React.FC<DivisionCardProps> = ({ name, description })
       </div>
       <p className="text-gray-300 text-sm leading-relaxed">{description}</p>
       <div className="mt-6">
-        <span className="inline-flex items-center gap-2 text-[#C9A96E] text-xs font-semibold uppercase tracking-wider opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          En savoir plus
+        <a
+          href={`mailto:contact@akollad.com?subject=${encodeURIComponent(`Akollad ${name} — demande d'information`)}`}
+          aria-label={`Contacter Akollad ${name}`}
+          className="inline-flex items-center gap-2 text-[#C9A96E] text-xs font-semibold uppercase tracking-wider opacity-80 group-hover:opacity-100 hover:underline underline-offset-4 transition-opacity duration-300"
+        >
+          Nous contacter
           <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M9 5l7 7-7 7" />
           </svg>
-        </span>
+        </a>
       </div>
     </div>
   );

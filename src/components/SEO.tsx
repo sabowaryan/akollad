@@ -11,7 +11,7 @@ interface SEOProps {
 }
 
 const SITE_URL = 'https://akollad.com';
-const DEFAULT_OG_IMAGE = `${SITE_URL}/web-app-manifest-512x512.png`;
+const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.png`;
 const SITE_NAME = 'Akollad Groupe';
 
 const SEO: React.FC<SEOProps> = ({
