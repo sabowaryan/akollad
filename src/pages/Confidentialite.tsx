@@ -58,7 +58,7 @@ const Confidentialite: React.FC = () => {
 
               <PolicySection number="01" title="Qui sommes-nous ?">
                 <p>
-                  Akollad Groupe S.A.S. (ci-après « Akollad », « nous », « notre ») est une holding technologique dont le siège est établi à Kinshasa, République Démocratique du Congo (RCCM : CD/KNG/RCCM/25-A-07960 — N° Impôt : A2557944L — ID : 01-J6100-N86614P). Nous exploitons ce site vitrine ainsi que plusieurs produits SaaS, dont PikSend (piksend.com) et GateCtr (gatectr.com).
+                  Ets Akollad Groupe (ci-après « Akollad », « nous », « notre ») est un établissement exploité par M. Ryan Sabowa Ngoyi (personne physique commerçante), dont le siège est établi au 12, av. Madimba, Q/Musey, C/Ngaliema, Kinshasa, République Démocratique du Congo (RCCM : CD/KNG/RCCM/25-A-07960 — N° Impôt : A2557944L — ID : 01-J6100-N86614P). Nous exploitons ce site vitrine ainsi que plusieurs produits SaaS, dont PikSend (piksend.com) et GateCtr (gatectr.com).
                 </p>
                 <p>
                   La présente politique de confidentialité décrit comment nous collectons, utilisons et protégeons vos données personnelles lorsque vous visitez notre site web.
