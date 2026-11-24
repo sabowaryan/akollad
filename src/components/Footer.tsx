@@ -72,7 +72,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-white/10 pt-8 flex flex-col gap-3">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-gray-500 text-xs text-center sm:text-left">
-              &copy; {new Date().getFullYear()} Akollad Groupe S.A.S. — Kinshasa, RDC — Tous droits réservés.
+              &copy; {new Date().getFullYear()} Ets Akollad Groupe — Kinshasa, RDC — Tous droits réservés.
             </p>
             <div className="flex items-center space-x-4">
               <a href="https://www.linkedin.com/company/akollad-group/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-500 hover:text-[#C9A96E] transition-colors duration-300">
@@ -87,7 +87,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
           <p className="text-gray-600 text-[10px] text-center sm:text-left leading-relaxed">
-            RCCM : CD/KNG/RCCM/25-A-07960 &nbsp;·&nbsp; N° Impôt : A2557944L &nbsp;·&nbsp; ID : 01-J6100-N86614P &nbsp;·&nbsp; Fondée en Novembre 2025
+            Ets Akollad Groupe — 12, av. Madimba, Q/Musey, C/Ngaliema, Kinshasa &nbsp;·&nbsp; RCCM : CD/KNG/RCCM/25-A-07960 &nbsp;·&nbsp; N° Impôt : A2557944L &nbsp;·&nbsp; ID : 01-J6100-N86614P &nbsp;·&nbsp; Fondée en Novembre 2025
           </p>
         </div>
       </div>

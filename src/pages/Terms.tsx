@@ -66,7 +66,7 @@ const Terms: React.FC = () => {
 
               <PolicySection number="01" title="Acceptation des conditions">
                 <p>
-                  En accédant et en utilisant le site web d'Akollad Groupe S.A.S. (ci-après « Akollad », « nous », « notre »), vous acceptez pleinement et sans réserve les présentes Conditions Générales d'Utilisation (CGU). Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser ce site.
+                  En accédant et en utilisant le site web d'Ets Akollad Groupe (ci-après « Akollad », « nous », « notre »), vous acceptez pleinement et sans réserve les présentes Conditions Générales d'Utilisation (CGU). Si vous n'acceptez pas ces conditions, veuillez ne pas utiliser ce site.
                 </p>
                 <p>
                   Akollad se réserve le droit de modifier ces conditions à tout moment. La version en vigueur est celle publiée sur cette page, avec la date de mise à jour en en-tête.
@@ -75,10 +75,10 @@ const Terms: React.FC = () => {
 
               <PolicySection number="02" title="Présentation du site">
                 <p>
-                  Le présent site est un site vitrine institutionnel présentant Akollad Groupe S.A.S., holding technologique dont le siège est établi à Kinshasa, République Démocratique du Congo (RCCM : CD/KNG/RCCM/25-A-07960 — N° Impôt : A2557944L — ID : 01-J6100-N86614P).
+                  Le présent site est un site vitrine institutionnel présentant Ets Akollad Groupe, établissement exploité par M. Ryan Sabowa Ngoyi (personne physique commerçante), dont le siège est établi au 12, av. Madimba, Q/Musey, C/Ngaliema, Kinshasa, République Démocratique du Congo (RCCM : CD/KNG/RCCM/25-A-07960 — N° Impôt : A2557944L — ID : 01-J6100-N86614P).
                 </p>
                 <p>
-                  Le site fournit des informations générales sur le groupe, ses divisions (Labs, Studio, Cloud, Ventures) et ses produits SaaS (PikSend, GateCtr). Il ne constitue pas une offre commerciale directe.
+                  Le site fournit des informations générales sur le groupe, ses divisions (Labs, Studio, Cloud, Ventures) et ses produits (PikSend, GateCtr, Joventy, MazaoChain). Il ne constitue pas une offre commerciale directe.
                 </p>
               </PolicySection>
 
