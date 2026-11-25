@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Carrieres from './pages/Carrieres';
@@ -12,7 +12,7 @@ import ScrollToHash from './components/ScrollToHash';
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <>
       <ScrollToHash />
       <Routes>
         <Route path="/" element={<Layout><Home /></Layout>} />
@@ -25,7 +25,7 @@ const App: React.FC = () => {
         <Route path="/terms" element={<Layout><Terms /></Layout>} />
         <Route path="/conditions" element={<Layout><Terms /></Layout>} />
       </Routes>
-    </Router>
+    </>
   );
 };
 
